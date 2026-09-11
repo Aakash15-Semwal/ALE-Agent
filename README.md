@@ -5,8 +5,7 @@
 [![Pydantic v2](https://img.shields.io/badge/Pydantic-v2.5%2B-red.svg)](https://docs.pydantic.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A resilient, production-grade autonomous intelligence agent designed to enrich corporate domains with structured intelligence. Developed for the **SoftwareBrio AI Engineer Intern Practical Take-Home Assignment**.
-
+A resilient, production-grade autonomous intelligence agent designed to enrich corporate domains with structured intelligence.
 Given a list of company domains (e.g., `postman.com`, `supabase.com`, `vapi.ai`), the agent:
 1. **Automated Browsing:** Spawns a headless Chromium browser using **Playwright** with stealth configurations to execute dynamic client-side JavaScript.
 2. **Subpage Discovery:** Autonomously discovers high-signal subpages (`/about`, `/team`, `/contact`, `/pricing`) using keyword-weighted link scoring.
@@ -221,22 +220,3 @@ pytest
 ```
 
 ---
-
-## 7. Rubric Alignment Summary
-
-| Rubric Criterion | Weight | How Our Implementation Excels |
-| :--- | :---: | :--- |
-| **Agent & Scraping Architecture** | **30%** | Native Async Playwright with stealth context to evade anti-bot blockers; dynamic JS hydration; keyword-weighted subpage discovery (`/about`, `/team`, `/contact`, `/pricing`). |
-| **LLM & Structured Output Quality** | **25%** | Strict Pydantic v2 schemas; multi-provider support (Gemini, OpenAI, Groq); pre-extracted regex heuristics; zero raw HTML dumping (pruned Markdown). |
-| **Error Handling & Resilience** | **20%** | Tenacity exponential backoff retries; dual wait strategy; isolated domain sandbox where 404s/timeouts never crash the batch run. |
-| **Code Quality & Documentation** | **15%** | Modular architecture, type hints, PEP 8 compliance, detailed phase-by-phase design rationales (`Phase 1.md` through `Phase 5.md`). |
-| **Loom Walkthrough** | **10%** | Clear 2–3 minute video demonstrating terminal execution, code architecture, and structured output. |
-
----
-
-## 8. Author & Submission Details
-- **Candidate:** Aakash Semwal
-- **Role:** AI Engineer Intern — Practical Take-Home Assignment
-- **Submission Email:** `support@softwarebrio.com`
-- **Subject:** `[AI Intern Submission] - Aakash Semwal`
-- **Operations Confirmation:** **"Yes"** (100% comfortable spending roughly 40% of working hours on manual lead prospecting, email discovery, and account handling alongside AI engineering tasks).
