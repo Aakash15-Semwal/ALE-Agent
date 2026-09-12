@@ -44,13 +44,6 @@ graph TD
 ```
 SoftwareBrio/
 ├── main.py                       # CLI entrypoint with Rich terminal interface
-├── architecture.md               # Complete architectural blueprint
-├── Phase 1.md                    # Environment, setup, and logging rationale
-├── Phase 2.md                    # Playwright crawler & DOM pre-processing rationale
-├── Phase 3.md                    # LLM extraction & Pydantic schema enforcement rationale
-├── Phase 4.md                    # Bonus features (Search fallback & cost tracking)
-├── Phase 5.md                    # CLI interface & deliverables documentation
-├── LOOM_SCRIPT.md                # 2-3 minute Loom walkthrough talking points
 ├── requirements.txt              # Pinned production dependencies
 ├── pytest.ini                    # Test runner configuration
 ├── .env.example                  # Environment configuration template
